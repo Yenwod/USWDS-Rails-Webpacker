@@ -17,19 +17,20 @@ $ rails s
 Navigate to http://localhost:3000 and you should see:
 
 <p align="center">
-  <img width="200" height="200" src="https://vaxcalc.s3.amazonaws.com/images/tubes.png">
+  <img width="434" height="370" src="https://vaxcalc.s3.amazonaws.com/images/uswds/1.png">
 </p>
+
+Create a main controller with a few actions and no stylesheets:
+```bash
+$ rails g controller main landing features pricing about contact resources --no-stylesheets
+```
+
+Add ```root 'main#landing'``` to your ```routes.rb``` 
+
 
 After app generation completes, we'll create procfiles:
 ```bash
 $ copy straight from the repo!
 ```
 
-
-At this point, you should see the famous "Yay, Rails!" when 
-
-Create a main controller with a few basic pages that you may want. Do not generate stylesheets.
-```bash
-$ rails g controller main landing features pricing about resources --no-stylesheets
-```
 
