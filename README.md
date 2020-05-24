@@ -14,7 +14,7 @@ You should now have a working generic Rails app.  Start it with:
 $ cd your-app-name
 $ rails s
 ```
-Navigate to http://localhost:3000 and you should see:
+Navigate to http://localhost:3000/ and you should see:
 
 <p align="center">
   <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/1.png">
@@ -27,7 +27,7 @@ $ rails g controller main landing features pricing about contact resources --no-
 
 Add ```root 'main#landing'``` to your ```routes.rb``` 
 
-Now it's going to get interesting.  Copy all the HTML code within the <body></body> tags of the USWDS [page template](https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.7.0/components/preview/layout--landing.html) and paste it within your landing view.  Refresh http://localhost:3000 and you should see something ugly like this:
+Now it's going to get interesting.  Copy all the HTML code within the <body></body> tags of the USWDS [page template](https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.7.0/components/preview/layout--landing.html) and paste it within your landing view.  Refresh http://localhost:3000/ and you should see something ugly like this:
 
 <p align="center">
   <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png">
@@ -38,9 +38,17 @@ Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#downlo
 Making sure that you are in the working directory of this app, create the production and dev procfiles:
 
 ```bash
-$
-$
+$ wget https://raw.githubusercontent.com/Yenwod/USWDS-Rails-Webpacker/master/Procfile
+$ wget https://raw.githubusercontent.com/Yenwod/USWDS-Rails-Webpacker/master/Procfile.dev
 ```
+Stop your rails server.  Start it up again with this new command:
 
-
+```bash
+$ heroku local -f Procfile.dev
+```
+If the server starts successfully, you'll see something like this:
+<p align="center">
+  <img width="704" height="463" src="https://vaxcalc.s3.amazonaws.com/images/uswds/3.png">
+</p>
+and (note the new port) http://localhost:5000/ should again show the same ugly page.  
 
