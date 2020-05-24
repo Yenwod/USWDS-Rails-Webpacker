@@ -33,4 +33,14 @@ Now it's going to get interesting.  Copy all the HTML code within the <body></bo
   <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png">
 </p>
 
+Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or the [Foreman gem] if you prefer.  You'll want Heroku if you'd like to deploy this app to Heroku as the last step of the tutorial.  
+
+Making sure that you are in the working directory of this app, create the production and dev procfiles:
+
+```bash
+$
+$
+```
+
+
 
