@@ -59,5 +59,11 @@ At this point, it's instructure to look inside ```package.json``` in the root of
 ```bash
 $ yarn add uswds
 ```
-Notice that ```uswds``` has been added to your ```package.json```, but this has had no impact upon your application yet.  You can tell it's had no impact by refreshing your browser and also that the rails server terminal window has had no activity.  This all is about to change.
+Notice that ```uswds``` has been added to your ```package.json```, but this has had no impact upon your application yet.  You can tell it's had no impact by refreshing your browser and also that the rails server terminal window shows no new activity.  This all is about to change.
+
+Add ```import 'uswds/dist/css/uswds.min.css'``` to the bottom of your ```app/javascript/packs/application.js```, save the file and immediately switch to the rails server terminal window and watch what happens.
+
+The terminal window should show something like this at the bottom: ```12:19:52 PM webpacker.1 |  ℹ ｢wdm｣: Compiled successfully.```
+
+
 
