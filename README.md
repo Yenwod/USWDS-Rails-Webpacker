@@ -50,5 +50,6 @@ If the server starts successfully, you'll see something like this:
 <p align="center">
   <img src="https://vaxcalc.s3.amazonaws.com/images/uswds/3.png">
 </p>
-and note the new port [http://localhost:5000/](http://localhost:5000/) should again show the same ugly page.  
+
+and (note the new port) [http://localhost:5000/](http://localhost:5000/) should again show the same ugly page.  
 
