@@ -33,7 +33,7 @@ Now it's going to get interesting.  Copy all the HTML code within the <body></bo
   <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png">
 </p>
 
-Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or the [Foreman gem] if you prefer.  You'll want Heroku if you'd like to deploy this app to Heroku as the last step of the tutorial.  
+Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or the [Foreman gem](https://github.com/ddollar/foreman) if you prefer.  You'll want the Heroku CLI if you'd like to deploy this app to Heroku as the last step of the tutorial.  
 
 Making sure that you are in the working directory of this app, create the production and dev procfiles:
 
@@ -48,7 +48,7 @@ $ heroku local -f Procfile.dev
 ```
 If the server starts successfully, you'll see something like this:
 <p align="center">
-  <img width="704" height="463" src="https://vaxcalc.s3.amazonaws.com/images/uswds/3.png">
+  <img src="https://vaxcalc.s3.amazonaws.com/images/uswds/3.png">
 </p>
-and (note the new port) http://localhost:5000/ should again show the same ugly page.  
+and note the new port [http://localhost:5000/](http://localhost:5000/) should again show the same ugly page.  
 
