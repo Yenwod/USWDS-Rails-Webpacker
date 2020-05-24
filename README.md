@@ -27,10 +27,10 @@ $ rails g controller main landing features pricing about contact resources --no-
 
 Add ```root 'main#landing'``` to your ```routes.rb``` 
 
+Now it's going to get interesting.  Copy all the HTML code within the <body></body> tags of the USWDS [page template](https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.7.0/components/preview/layout--landing.html) and paste it within your landing view.  Refresh http://localhost:3000 and you should see something ugly like this:
 
-After app generation completes, we'll create procfiles:
-```bash
-$ copy straight from the repo!
-```
+<p align="center">
+  <img width="434" height="370" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png">
+</p>
 
 
