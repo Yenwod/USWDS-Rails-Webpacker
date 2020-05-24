@@ -61,9 +61,13 @@ $ yarn add uswds
 ```
 Notice that ```uswds``` has been added to your ```package.json```, but this has had no impact upon your application yet.  You can tell it's had no impact by refreshing your browser and also that the rails server terminal window shows no new activity.  This all is about to change.
 
-Add ```import 'uswds/dist/css/uswds.min.css'``` to the bottom of your ```app/javascript/packs/application.js```, save the file and immediately switch to the rails server terminal window and watch what happens.
+Add the following to the the bottom of your ```app/javascript/packs/application.js```, save the file and immediately switch to the rails server terminal window and watch what happens.
+```javascript
+import 'uswds/dist/css/uswds.min.css'
+import 'uswds/dist/js/uswds.min.js'
+```
 
 The terminal window should show something like this at the bottom: ```12:19:52 PM webpacker.1 |  ℹ ｢wdm｣: Compiled successfully.```
 
-
+When you refresh your browser, you have a USWDS-styled app!  All you need to do now is fix the missing icons and you're good to go.  
 
