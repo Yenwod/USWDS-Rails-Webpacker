@@ -17,7 +17,7 @@ $ rails s
 Navigate to http://localhost:3000/ and you should see:
 
 <p align="center">
-  <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/1.png">
+  <kbd><img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/1.png"></kbd>
 </p>
 
 Create a main controller with a few actions and no stylesheets:
@@ -30,7 +30,7 @@ Add ```root 'main#landing'``` to your ```routes.rb```
 Now it's going to get interesting.  Copy all the HTML code within the <body></body> tags of the USWDS [page template](https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.7.0/components/preview/layout--landing.html) and paste it within your landing view.  Refresh http://localhost:3000/ and you should see something ugly like this:
 
 <p align="center">
-  <img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png">
+  <kbd><img width="520" height="444" src="https://vaxcalc.s3.amazonaws.com/images/uswds/2.png"></kbd>
 </p>
 
 Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or the [Foreman gem](https://github.com/ddollar/foreman) if you prefer.  You'll want the Heroku CLI if you'd like to deploy this app to Heroku as the last step of the tutorial.  
@@ -55,8 +55,9 @@ and (note the new port) [http://localhost:5000/](http://localhost:5000/) should 
 
 ### Integrate USWDS via webpacker
 
-yarn add uswds
+At this point, it's instructure to look inside ```package.json``` in the root of your app.  We're going to use yarn to add USWDS as a new dependency.  With your local server still running, open a new command line terminal and execute:
+```bash
+$ yarn add uswds
+```
+Notice that ```uswds``` has been added to your ```package.json```, but this has had no impact upon your application yet.  You can tell it's had no impact by refreshing your browser and also that the rails server terminal window has had no activity.  This all is about to change.
 
-what does this do?  adds to node_modules but has no effect on your app
-
-import css next
