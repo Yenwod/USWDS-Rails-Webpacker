@@ -53,3 +53,10 @@ If the server starts successfully, you'll see something like this:
 
 and (note the new port) [http://localhost:5000/](http://localhost:5000/) should again show the same ugly page.  
 
+### Integrate USWDS via webpacker
+
+yarn add uswds
+
+what does this do?  adds to node_modules but has no effect on your app
+
+import css next
