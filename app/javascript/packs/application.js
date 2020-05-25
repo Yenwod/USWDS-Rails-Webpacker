@@ -15,3 +15,7 @@ require("turbolinks").start()
 // const imagePath = (name) => images(name, true)
 
 import "controllers"
+
+import 'uswds/dist/css/uswds.min.css'
+import 'uswds/dist/js/uswds.min.js'
+
